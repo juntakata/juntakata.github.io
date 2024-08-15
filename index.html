@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Login paget</title>
+</head>
+
+<script type="text/javascript">
+    function display(form) {
+        if (form.username.value == "test" && form.password.value == "test") {
+            // location = "page2.html"
+            alert("Success")
+        } else {
+            alert("Invalid credential")
+        }
+    }
+</script>
+
+<body>
+    <form>
+        Username: <input type="text" name="username" /><br><br>
+        Password: <input type="password" name="password" /><br><br>
+        <input type="button" value="Login" onClick="display(this.form)" />
+    </form>
+</body>
+
+</html>
